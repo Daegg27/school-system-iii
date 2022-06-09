@@ -14,9 +14,12 @@ while True:
     elif mode == "3":
         name = input("Please input the student's name: ")
         age = input("Please input the student's age: ")
-        # role = "Student"
+        role = "Student"
         new_student_id = input("Please input the student's ID: ")
         password = input("Please give the student a unique password: ")
-        school.add_student(name, age, password, new_student_id)
+        school.add_student(name, age, role, password, new_student_id)
+    elif mode == "4":
+        find_student_id = input("Enter the student's unique ID: ")
+        school.remove_student(find_student_id)
     elif mode == '5':
         break
