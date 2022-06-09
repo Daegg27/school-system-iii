@@ -17,9 +17,9 @@ class School:
             if student.school_id == student_id:
                 return student
 
-    def add_student(self, name, age, new_student_id, password):
+    def add_student(self, name, age, role, new_student_id, password):
         
-        new_student = Student(name, age, "Student", new_student_id, password)
+        new_student = Student(name, age, role, new_student_id, password)
         self.students.append(new_student)
 
     def remove_student(self, old_student_id):

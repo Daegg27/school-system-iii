@@ -17,9 +17,19 @@ while True:
         role = "Student"
         new_student_id = input("Please input the student's ID: ")
         password = input("Please give the student a unique password: ")
-        school.add_student(name, age, password, new_student_id)
+        school.add_student(name, age, role, password, new_student_id)
     elif mode == "4":
         find_student_id = input("Enter the student's unique ID: ")
         school.remove_student(find_student_id)
     elif mode == '5':
         break
+
+
+# Working through discrepancy of creating a new student class/instance vs instructions (dictionary)
+
+# print(school.list_students)
+# school.students.append({"name": "Dalton"})
+# print(school.students)
+# print(school.students[0].name)
+# print(school.students[6]["name"]) # print(school.students[6].name) doesn't work
+
