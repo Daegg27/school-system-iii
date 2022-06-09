@@ -11,5 +11,12 @@ while True:
         student_id = input('Enter student id:')
         student_string = str(school.find_student_by_id(student_id))
         print(student_string)
+    elif mode == "3":
+        name = input("Please input the student's name: ")
+        age = input("Please input the student's age: ")
+        # role = "Student"
+        new_student_id = input("Please input the student's ID: ")
+        password = input("Please give the student a unique password: ")
+        school.add_student(name, age, password, new_student_id)
     elif mode == '5':
         break
